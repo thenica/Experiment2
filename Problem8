@@ -1,0 +1,23 @@
+// This program will generate the sum of all whole numbers starting from 1 up to a given number.
+
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main ()
+
+{
+	int a,x,y,z;		
+	cout << "Enter a number: "; cin >> x;
+	cout << "Multiplication table of "<< x<<"\n";
+	
+	
+	for (y=0;y<10;y++)
+	{
+		a=y+1;
+		z=a*x;
+		cout << a << " * " <<x << "= "<<z<<"\n"<< endl;
+	}	
+	return 0;
+	}
