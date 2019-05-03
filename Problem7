@@ -1,0 +1,40 @@
+// This program will generate the sum of all whole numbers starting from 1 up to a given number.
+
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main ()
+
+{
+	int x;
+	int y;
+	int z;
+
+	do
+		
+	{
+		z=0;
+		cout <<"Enter a number:\n"; 
+		cin>>x;
+
+		for (y=1;y<=x;y++)
+			z+=y;
+			{
+				if (x>0)
+					cout <<"The sum of all whole numbers from 1 to " << x << " is "<< z;
+				else if (x==0) 
+					cout <<"Thank you!\n";
+				else if (x<=-1)
+					cout <<"Thank you!\n";
+	
+			}
+	
+		
+		cout <<"\n" << endl;
+	}
+	while (x!=0);
+	
+	return 0;
+	}
