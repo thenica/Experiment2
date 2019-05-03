@@ -1,0 +1,24 @@
+ // This program counts numbers.
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+	int A;
+	cout <<"Counting...\n";
+	
+	for (A=1; A<10; A++)
+	{
+      cout << A << ",";
+	} 
+	
+	for (A>=10; A<=30; A+=2)
+	{
+		cout << A << ",";
+	}	
+return 0; 	
+	
+}
+ 
