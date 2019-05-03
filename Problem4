@@ -1,0 +1,33 @@
+// This program accepts three integers and displays the largest among the three
+
+#include <iostream>
+#include <conio.h>
+
+using namespace std;
+
+int main()
+{
+		float A,B,C;
+		
+		{
+		cout << "Enter first number: "; cin >> A;
+		cout << "Enter second number: "; cin >> B;
+		cout << "Enter third number: "; cin >> C;
+		
+		if (A>B && A>C)
+		cout << "The LARGEST of the three numbers is " << A;
+		else if (B>A && B>C)
+		cout << "The LARGEST of the three numbers is " << B;
+		else if (C>A && C>B)
+		cout << "The LARGEST of the three numbers is " << C;
+		else if (A==B && B==C && C==A)
+		cout <<"Invalid Input! Values are equal"; 
+		
+		cout <<"\n" << endl;
+	
+		}
+	
+	
+return 0; 	
+	
+}
