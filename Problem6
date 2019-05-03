@@ -1,0 +1,30 @@
+// This program  will output the next 20 fibonacci numbers
+
+#include <iostream>
+
+using namespace std;
+
+int main ()
+
+{
+	int x,y;
+	int z=0;
+	int a=1;
+	int b=23;
+	
+	cout <<"Fibonacci Numbers:\n ";
+	
+	for (x=0;x<b;x++)
+	{
+		if (x<1)
+			y = x;
+		else 
+		{
+			y=z+a;
+			a=z;
+			z=y;
+		}
+			cout << y <<", ";	
+	}	
+return 0;	
+}
