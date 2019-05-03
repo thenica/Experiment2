@@ -1,0 +1,79 @@
+// This program calculates the value of V by accepting 2 integers x and y
+
+#include <iostream>
+#include <cmath>
+#include <iomanip>
+#include <conio.h>
+
+using namespace std;
+
+int main()
+{
+		int X;
+		float Y,V,Z,A;
+	
+		cout << "Enter Value of X: " ;
+		 cin >> X;
+		
+	Z=2.5;
+			
+	switch (X) 
+	{
+		case 1: 
+		{
+				(X==1);
+				cout << "Enter Y value: " ; cin>> Y; 
+				if (Y <=1 && Y<5)
+				
+				{
+					V= X * Y * Z;
+					cout << setw (10);
+					cout << fixed<< setprecision (2)<< "V= " << V;
+				}	
+					else if (Y>=5)
+					{
+						V= 1  + (Y/Z);
+						cout<<setw (10);
+						cout << fixed<< setprecision (2) << "V= " << V;
+					}
+					
+					else 
+						cout << "Invalid Input"; 
+		break;
+		}	
+		case 2:
+			{
+				(X==2);
+				cout << "Enter Y Value: ";cin>>Y; 
+				if (Y <=5) 
+				{
+					A=abs(((2-Y)/Z));
+					cout<<setw (10);
+					cout << fixed<< setprecision (2) << "V=|  " << A < "| ";
+						
+				}
+					else if (Y > 5) 
+					{
+						V = 2 - (sqrt(Y+Z));          // squareroot of Y+Z
+						cout<<setw (10);
+						cout << fixed<< setprecision (2) << "V= " << V;
+					}
+					
+					else 
+						cout << "Invalid Input";
+				
+			
+			break;	
+			}
+			default :
+			{
+				cout <<  "Enter Y Value: ";cin>>Y;
+				V= X+Y+Z;
+				cout<<setw (10);
+				cout << fixed<< setprecision (2) << "V= " << V;
+			}
+			
+	}		
+return 0; 	
+	
+}
