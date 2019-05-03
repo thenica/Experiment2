@@ -1,0 +1,72 @@
+// This program calculates a customer's monthly bill. //
+#include <iostream>
+#include <cmath>
+#include <conio.h>
+
+using namespace std;
+
+int main ()
+{
+	char Package, A, B, C;
+	float monthlyBill;
+	float hour, billA, billB;
+	
+	cout << "What package are you using?" << endl;
+	cout << "A: For P995/mo 10 hrs of access are provided. Additional hrs are P20/hr" << endl;
+	cout << "B: For P1495/mo 20 hrs of access are provided. Additional hrs are P10/hr" << endl;
+	cout << "C: For P1995/mo of unlimited access is provided" << endl;
+	cout << "Enter Package (A-C): ";
+	cin >> Package;
+	
+	switch (Package)
+	{
+		case 'A':
+		case 'a':
+			{
+				cout << "Enter How many hours used" << endl;	
+				cin>>hour;
+				if (hour>10)
+				{
+					billA = (hour-10) * 20 + 995;
+					cout << "Total Amount Due: P" << billA;
+				}	
+					else 
+					cout<<"Total Amount Due: P995";
+						
+			break;	
+			}
+			case 'B':
+			case 'b':
+			{
+				cout << "Enter How many hours used" << endl;	
+				cin>>hour;
+				if (hour>20)
+				{
+					billB = (hour-20 ) * 10+ 1495;
+					cout<< "Total Amount Due:  P" << billB;
+					
+				}
+					else 
+					cout <<"Total Amount Due: P1495";
+			
+			break;	
+			}
+			case 'C':
+			case 'c':
+			{
+				cout << "Customer has Unlimited Access Total Amount Due: P1995" << endl;
+				break;
+			default :
+					cout <<  "Invalid Input";
+
+				
+			}
+			
+			
+		
+	}
+
+		return 0; 
+	
+	
+}
