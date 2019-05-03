@@ -17,14 +17,13 @@ int main ()
 	cout << "C: For P1995/mo of unlimited access is provided" << endl;
 	cout << "Enter Package (A-C): ";
 	cin >> Package;
-	
+	cout << "Enter How many hours used: "; cin>>hour;
 	switch (Package)
 	{
 		case 'A':
 		case 'a':
 			{
-				cout << "Enter How many hours used" << endl;	
-				cin>>hour;
+			
 				if (hour>10)
 				{
 					billA = (hour-10) * 20 + 995;
@@ -38,8 +37,7 @@ int main ()
 			case 'B':
 			case 'b':
 			{
-				cout << "Enter How many hours used" << endl;	
-				cin>>hour;
+			
 				if (hour>20)
 				{
 					billB = (hour-20 ) * 10+ 1495;
