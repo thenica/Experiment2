@@ -1,0 +1,44 @@
+// A program that computes a customer's water bill
+
+#include <iostream>
+#include <cmath>
+#include <conio.h>
+
+using namespace std;
+
+int main()
+{
+	float x;
+	float y;
+	float a;
+	float b;
+	float c;
+	
+	{
+	cout << "Enter gallon consumed:\n"; cin >> x;
+	cout << "Enter unpaid previous month bill:\n"; cin >> y;
+	
+	
+	if (y<=0)
+	{
+		a=(x*1.10)+35;
+		cout <<"Monthly Bill: P " << a;
+	}
+	
+	else if (y>0)
+	{
+		b=(x*1.10)+35+20+y;	
+		cout<<"Month bill with unpaid balance: P " <<b;
+	}
+	
+	else if (x==0)
+	{
+	
+		cout << "Insufficient Information";	
+	}
+
+	
+	}
+	
+	return 0;		
+}
